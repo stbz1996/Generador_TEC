@@ -1,0 +1,311 @@
+*{
+	font-family: verdana;
+	
+}
+body{
+	background: white;	
+}
+select{
+	border-radius: 10px;
+	padding: 0.2%;
+}
+input{
+	border-radius: 10px;
+}
+#cuerpoDePagina{
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	overflow: hidden;
+}
+#presentacion{
+	width: 100%;
+	background: white;
+	text-align: center;
+}
+
+#botoneraInicial{
+	width: 100%;
+	padding: 0.5%;
+	margin-left: 7.7%;
+}
+
+#botoneraInicial input{
+	font-size: 14px;
+	padding-top: 0.5%;
+	padding-bottom: 0.6%;
+	text-align: center;
+	width: 20.5%; 
+	border-radius: 20px;
+}
+#botoneraInicial input:hover{
+	background: red;
+}
+
+
+.CursosGeneral p{
+	font-size: 18px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#titulo{
+	color: white;
+	font-size: 20px;
+}
+
+.CursosGeneral select{
+	font-size: 13px;
+	margin-bottom: 1%;	
+}
+
+.Curso{
+	width: 21%;
+	margin-top: 0.5%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 1%;
+	overflow: hidden;
+	float: left;
+	background: #DBCECE;
+	border-radius: 30px;
+}
+
+.Curso p{
+	text-align: center;
+	color: black;
+	font-size: 15px;
+	margin-top: 0%;
+	margin-bottom: 3%;
+}
+
+.Conboboxes{
+	width: 33.333333%;
+	float: left;
+	margin-bottom: 2%;
+	background: white;
+	border-radius: 10px;	
+}
+
+.Conboboxes:hover{
+	background: #06A69F;
+}
+
+.ConboboxesProfesores{
+	width: 95%;
+	margin-bottom: 2%;
+	background: white;
+	border-radius: 10px;
+}
+
+.botonCurso{
+	font-size: 12px;
+	margin: 1%;
+	padding: 1%;
+	width: 31.32%;
+	background: #C6BCBC;
+}
+
+.botonCurso:hover{
+	background: #06A69F;
+}
+
+#agregar{
+	width: 8%;
+	padding-top: 0.1%;
+	padding-bottom: 0.2%;
+	text-align: center;
+}
+#agregar:hover{
+	background: red;
+}
+
+.CursosGeneral{
+	width: 100%;
+	background: #021B7C;
+	display: none;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.generarlinks{
+	width: 100%;
+	background: #021B7C;
+	display: none;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.profesorGenerado{
+	float: left;
+	margin-left: 1.3%;
+	margin-bottom: 1%;
+	padding: 0.5%;
+	width: 47%;
+	background: #C6BCBC;
+	border-radius: 30px;
+}
+
+.profesorGenerado p{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+/* CSS del formulario */
+#introduccionFormulario{
+	text-align: center;
+	overflow: hidden;
+	color: black;
+	margin-top: 1%;
+}
+#titulo2{
+	margin: 0%;
+}
+#nombreProfesor{
+	margin-top: 0%;
+}
+#seleccionInicial{
+	background: #021B7C;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+#seleccionInicial div{
+	width: 23%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+	font-size: 16px;
+	padding: 1%;
+	margin-left: 5.5%;
+}
+
+#seleccionInicial div p {
+	margin: 0%;
+	color: white;
+}
+
+#CursosFormulario{
+	background: #021B7C;
+	width: 49.5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	color: white;
+	border-radius: 20px;
+}
+
+#horariosFormulario{
+	background: #021B7C;
+	width: 49.5%;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	margin-left: 1%;
+	color: white;
+	border-radius: 20px;
+}
+
+.botonForm{
+	margin: 1%;
+	margin-top: 0%;
+	font-size: 14px;
+	padding: 0.5%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#divForm{
+	float: left;
+	width: 98%;
+	padding: 1%;
+}
+
+#selectsForm{
+	margin-bottom: 3%;
+}
+
+#enviarForm{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin-top: -1%;
+	margin-bottom: 1%;
+}
+#enviarForm input{
+	font-size: 16px;
+	padding: 0.5%;
+}
+
+#infoProfesor{
+	background: #021B7C;
+	text-align: center;
+	overflow: hidden;
+	width: 99%;
+	padding: 0.5%;
+	padding-bottom: 0%;
+	margin-bottom: 1%;
+	margin-top: 0.5%;
+	border-radius: 20px;
+}
+#infoProfesor p{
+	color: white;
+	font-size: 24px;
+	margin-top: 0.5%;
+}
+
+.comboboxFormulario{
+	width: 53%;
+	margin: 1%;
+	overflow: hidden;
+	float: left;
+	margin-left: 17.5%;
+	margin-right: 0%;
+}
+.comboboxFormulario2{
+	width: 11.5%;
+	margin: 1%;
+	overflow: hidden;
+	float: left;
+}
+
+#selectsForm p{
+	float: left;
+	margin-bottom: 0%;
+	text-align: left;
+}
+#txtFomInfo1{
+	width: 53%;
+	margin-left: 17.5%;
+}
+#txtFomInfo2{
+	width: 11.5%;
+	margin-left: 1%;
+}
+
+#txtFomInfo3{
+	margin-bottom: 0%;
+	text-align: center;
+	width: 24%;
+	margin-left: 38%;
+}
+.comboboxFormulario3{
+	width: 50%;
+	margin: 1%;
+	overflow: hidden;
+	float: left;
+	margin-left: 25%;
+	margin-right: 0%;
+}
