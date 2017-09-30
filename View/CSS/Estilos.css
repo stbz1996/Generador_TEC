@@ -147,8 +147,12 @@ input{
 	background: #C6BCBC;
 	border-radius: 30px;
 }
-
 .profesorGenerado p{
+	font-size: 12px;
+	overflow: hidden;
+}
+
+#nombreProfesor{
 	font-size: 20px;
 }
 
@@ -202,6 +206,7 @@ input{
 	float: left;
 	color: white;
 	border-radius: 20px;
+	padding-bottom: 1%;
 }
 
 #horariosFormulario{
@@ -215,6 +220,7 @@ input{
 	margin-left: 1%;
 	color: white;
 	border-radius: 20px;
+	padding-bottom: 1%;
 }
 
 .botonForm{
@@ -281,6 +287,10 @@ input{
 	float: left;
 }
 
+#imgForm{
+	margin-bottom: 0.5%;
+}
+
 #selectsForm p{
 	float: left;
 	margin-bottom: 0%;
@@ -298,7 +308,7 @@ input{
 #txtFomInfo3{
 	margin-bottom: 0%;
 	text-align: center;
-	width: 24%;
+	width: 27%;
 	margin-left: 38%;
 }
 .comboboxFormulario3{

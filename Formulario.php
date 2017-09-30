@@ -18,7 +18,7 @@
 
         <!-- Introduccion de el formulario -->
     	<div id="introduccionFormulario">
-            <img src="View/IMG/Tec.png" width=400 height=65>
+            <img src="View/IMG/Tec.png" width=400 height=65 id="imgForm">
     		<div id="infoProfesor">
                 <p id="titulo2">Formulario para solicitud de cursos</p>
         		<p id="nombreProfesor">

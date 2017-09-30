@@ -1,7 +1,7 @@
 <?php
 	// Crea la conexion con la base de datos
 	function conexion(){
-		$server = "127.0.0.1";
+		$server = "localhost";
 		$user = "root";
 		$password = "";
 		$dataBase = "AutomatizacionDeHorariosINGTEC";

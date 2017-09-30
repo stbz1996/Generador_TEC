@@ -23,7 +23,7 @@ function asignarProfesor(){
 	var selects = document.getElementById('selects3');
 	var nodo    = document.createElement('Div');
 	if (valor == "false") {alert('Debe seleccionar un profesor'); return;}
-	var link = "http://localhost/Generador_de_horarios_TEC/Formulario.php?";
+	var link = "http://localhost/Generador_TEC/Formulario.php?";
 	
 	// inicia la codificacion del string, se envia el id del profesor con algunas operaciones matematicas
 	// que deben ser resueltas en la otra capa de datos para obtener el id original
@@ -34,7 +34,7 @@ function asignarProfesor(){
 	var parametros = "parametro="+idProf;
 
 	var string = "<div class='profesorGenerado'>";
-		string += "<p>" + arregloDeSubCadenas[1] + "</p>";
+		string += "<p id='nombreProfesor'>" + arregloDeSubCadenas[1] + "</p>";
 		string += "<p>" + "<a href="+link+parametros+">" + link+parametros+ "</a></p>";
 	string += "</div>";
 
