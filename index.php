@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="Control/JS/Generador.js"></script>
 	<script type="text/javascript" src="Control/JS/CursosObligatorios.js"></script>
 	<script type="text/javascript" src="Control/JS/CursosCarrera.js"></script>
+	<script type="text/javascript" src="Control/JS/encriptacion.js"></script>
 	<title>Login</title>
 </head>
 <body>
@@ -31,8 +32,7 @@
 		<div id="generarlinks" class="CursosGeneral">
 			<p id="titulo">Generar links de formularios</p>
 			<span id="comboboxProfesoresFormulario"></span>
-			<input type="button" value="Generar Link" id="agregar" onclick="asignarProfesor();"></input>
-			
+			<input type="button" value="Generar Link" id="agregar" onclick="asignarProfesor()"></input>
 			<div id="selects3"></div>
 		</div>
 

@@ -3,8 +3,8 @@
 	function conexion(){
 		$server = "localhost";
 		$user = "root";
-		$password = "";
-		$dataBase = "AutomatizacionDeHorariosINGTEC";
+		$password = "tsunamy1996";
+		$dataBase = "automatizaciondehorarios";
 		$conection = mysqli_connect($server, $user, $password);
 		if($conection){
 			mysqli_select_db($conection, $dataBase);

@@ -9,7 +9,10 @@
 	$cursos = $_POST['cursos'];
 	$prioridades = $_POST['prioridades'];
 	$horarios = $_POST['horarios'];
-	$query = "INSERT INTO formulario(ampliacion,estudiantesPractica,fecha,Jornada_idJornada, Profesor_idProfesor)VALUES ('$ampliacion', '$practica' , '$fecha', '$jornada' , 1);";
+	session_start();
+	$id = $_SESSION['idProfesor'];
+	$codigoHash = $_SESSION['codigo'];
+	$query = "INSERT INTO formulario(ampliacion, estudiantesPractica, fecha, Jornada_idJornada, Profesor_idProfesor, FormularioHash_idFormularioHash) VALUES ('$ampliacion', '$practica' , '$fecha', '$jornada' , '$id', '$codigoHash');";
 	if(mysqli_query($con,$query)){
 		$form =  mysqli_insert_id($con);
 		$tamano = count($cursos);

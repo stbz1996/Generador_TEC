@@ -24,12 +24,14 @@
         		<p id="nombreProfesor">
                     <?php
                         session_start();
-                        require_once('Control/Consultas/SolicitarProfesoresEspecifico.php');
-                        $nom = intval($_GET['parametro']);
-                        $nom += 787;
-                        $nom -= 106158;
-                        solicitarProf($nom);
+                        require_once('Control/Consultas/SolicitarProfesorEspecifico.php');
+                        $cod = $_GET['p'];
+                        solicitarProf($cod);
+
+                        $_SESSION['codigo'] = solicitarIdHash($cod);
+
                         echo $_SESSION['nombre'];
+                        
                     ?>
                 </p> 
                 <div id="enviarForm">

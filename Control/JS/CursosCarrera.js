@@ -41,7 +41,23 @@ function crearComboBoxSiguienteCursoCarrera(){
         data:{id:id, valor:valor},
 		success:function(respuesta){
 			if (respuesta) {	
-				nodo.innerHTML = respuesta;
+
+				arreglo = respuesta.split("-");
+				var string = "<div class='Curso' id='css"+id+"'>";
+				string += "<p>"+valor+"</p>";
+				string += "<SELECT class='ConboboxesProfesores' id='profesor"+id+"'>";
+
+				for (var i = 0; i < arreglo.length-1; i++) {
+					arregloPalabras = arreglo[i].split("#", 3);
+					// [0] id, [1] nombre, [2] apellido
+					var nombre = arregloPalabras[1] + " " + arregloPalabras[2];
+					string += "<OPTION VALUE='"+nombre+"' >"+nombre+"</OPTION>";
+				}
+				string += "</SELECT>";
+				string += "<input class='botonCurso' id='"+id+"' type='button' value='Asignar'    onclick='asignarCursoCarrera(this)'></input>";
+				string += "<input class='botonCurso' id='"+id+"' type='button' value='Desasignar' onclick='desasignarCursoCarrera(this)'></input>";
+				string += "<input class='botonCurso' id='"+id+"' type='button' value='Eliminar'   onclick='borrarCursoCarrera(this)'></input>";
+				nodo.innerHTML = string;
 				contadorCursosCarreraColocados++;
 				selects.appendChild(nodo);
 			}				
