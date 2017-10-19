@@ -1,33 +1,52 @@
+/* Generales */
 *{
 	font-family: verdana;
 	outline:0px;
 }
+
 body{
 	background: white;	
 }
+
 select{
 	border-radius: 10px;
 	padding: 0.2%;
 }
+
 input{
 	border-radius: 10px;
 }
+#mensajeFuncional{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 25px;
+	width: 50%;
+	margin-left: 25%;
+	font-weight: bold;
+}
+
 #cuerpoDePagina{
 	width: 96%;
 	margin-left: 2%;
 	margin-right: 2%;
 	overflow: hidden;
 }
+/*#############*/
+
+
+/* Barra superior */
 #presentacion{
 	width: 100%;
 	background: white;
 	text-align: center;
 }
+/*#############*/
 
+/* Botonera */
 #botoneraInicial{
 	width: 100%;
 	padding: 0.5%;
-	margin-left: 7.7%;
+	margin-left: 0%;
 }
 
 #botoneraInicial input{
@@ -35,19 +54,23 @@ input{
 	padding-top: 0.5%;
 	padding-bottom: 0.6%;
 	text-align: center;
-	width: 20.5%; 
+	width: 19.5%; 
 	border-radius: 20px;
 }
+
 #botoneraInicial input:hover{
 	background: red;
 }
+/*#############*/
 
 
+/* Seccion 1, generar links */
 .CursosGeneral p{
 	font-size: 18px;
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
+
 #titulo{
 	color: white;
 	font-size: 20px;
@@ -69,6 +92,7 @@ input{
 	float: left;
 	background: #DBCECE;
 	border-radius: 30px;
+
 }
 
 .Curso p{
@@ -79,6 +103,13 @@ input{
 	margin-bottom: 3%;
 }
 
+#cuadroDatosIniciales{
+	width: 100%;
+	float: left;
+	color: white;
+	margin-bottom: 2%;
+	margin-top: 1%;
+}
 .Conboboxes{
 	width: 33.333333%;
 	float: left;
@@ -155,8 +186,6 @@ input{
 #nombreProfesor{
 	font-size: 20px;
 }
-
-
 
 
 

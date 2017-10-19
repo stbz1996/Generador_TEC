@@ -13,6 +13,14 @@
 	$id = $_SESSION['idProfesor'];
 	$codigoHash = $_SESSION['codigo'];
 	$query = "INSERT INTO formulario(ampliacion, estudiantesPractica, fecha, Jornada_idJornada, Profesor_idProfesor, FormularioHash_idFormularioHash) VALUES ('$ampliacion', '$practica' , '$fecha', '$jornada' , '$id', '$codigoHash');";
+	$query2 ="SELECT idFormulario from formulario where FormularioHash_idFormularioHash = $codigoHash";
+	if(mysqli_query($con,$query2))
+	{
+		$oldform = fetch(ejecutarQuery($query2));
+		ejecutarQuery("CALL delete_cursos_formulario(".$oldform['idFormulario'].")");
+		ejecutarQuery("CALL delete_horario_formulario(".$oldform['idFormulario'].")");
+		ejecutarQuery("DELETE FROM formulario where idFormulario =".$oldform['idFormulario'].";");
+	}
 	if(mysqli_query($con,$query)){
 		$form =  mysqli_insert_id($con);
 		$tamano = count($cursos);
@@ -30,5 +38,7 @@
 		}
 		echo 'Formulario creado exitosamente';
 	}
+	
+	
 
 ?>

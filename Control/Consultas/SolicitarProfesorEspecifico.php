@@ -10,6 +10,7 @@
 		$_SESSION['idProfesor'] = $prof["idProfesor"];
 		$_SESSION['correo'] = $prof["correo"];
 		$_SESSION['nombre'] = $prof["nombre"]." ".$prof["apellidos"];
+		$_SESSION['periodo'] = 'periodo de prueba wey';
 	}
 
 	function solicitarIdHash($codigo){

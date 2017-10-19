@@ -2,10 +2,10 @@
 	// Añade el archivo de conexion
 	require_once('../../Model/Conexion/conexion.php');
 	// Ejecuta un query
-	$res = ejecutarQuery("select * from profesor");
+	$res = ejecutarQuery("select * from periodo");
 	$string = '';
 	while($data = fetch($res)){
-		$string .= $data["idProfesor"].'#'.$data["nombre"]."#".$data["apellidos"].'-';
+		$string .= $data["idPeriodo"].'#'.$data["ano"]."#".$data["semestre"].'-';
 	}
 	// retorna el string con todos los profesores
 	echo $string;

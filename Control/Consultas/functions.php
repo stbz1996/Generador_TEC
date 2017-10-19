@@ -19,6 +19,15 @@
  		echo "</select>";
 	}
 
+	function listarperiodos() {
+		echo '<select name="periodos" id="periodos">';
+		$result = ejecutarQuery("SELECT idperiodo, numero, año FROM periodo");
+		while($row = fetch($result)) {
+ 			echo '<option   value=\"'.$row['idperiodo'].'">'.$row['numero'].' - '.$row['año'].'</option>';
+ 		}
+ 		echo "</select>";
+	}
+
 	function listarprioridad() {
 		echo '<select name="prioridad1" id="prioridad1" class="comboboxFormulario2">';
 		$result = ejecutarQuery("SELECT idprioridad, descripcion FROM prioridad;");			

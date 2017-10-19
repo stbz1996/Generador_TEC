@@ -7,7 +7,10 @@
 var contadorCursosColocados = 1;
 var identificadorCursoObligatorio = '-CursoObligatorioid';
 
-function cargarCursosOtros(){    	
+function cargarCursosOtros(){  
+	// si hay un periodo seleccionado continua
+	if (hayPeriodo() == false) {alert('Debe seleccionar un periodo'); return;}
+
 	$.ajax({
 		url: 'Control/Consultas/SolicitarCursosObligatorios.php',
 		success:function(respuesta){
@@ -22,6 +25,8 @@ function cargarCursosOtros(){
 	document.getElementById('cursosObligatorios').style.display = 'block';
 	document.getElementById('cursosCarrera').style.display = 'none';
 	document.getElementById('generarlinks').style.display = 'none';
+	document.getElementById('datosIniciales').style.display = 'none';
+	document.getElementById('dt').disabled = 'true';
 }
 
 function crearComboBoxSiguienteCursoObligatorio(){

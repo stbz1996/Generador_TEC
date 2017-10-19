@@ -2,6 +2,10 @@
 <?php
     require_once('Model/Conexion/conexion.php');
 	require_once "Control/Consultas/functions.php";
+    session_start();
+    require_once('Control/Consultas/SolicitarProfesorEspecifico.php');
+    $cod = $_GET['p'];
+    solicitarProf($cod);
 ?>
 <html>
 <head>
@@ -22,24 +26,18 @@
     		<div id="infoProfesor">
                 <p id="titulo2">Formulario para solicitud de cursos</p>
         		<p id="nombreProfesor">
-                    <?php
-                        session_start();
-                        require_once('Control/Consultas/SolicitarProfesorEspecifico.php');
-                        $cod = $_GET['p'];
-                        solicitarProf($cod);
-
+                    <?php 
                         $_SESSION['codigo'] = solicitarIdHash($cod);
-
-                        echo $_SESSION['nombre'];
-                        
+                        echo $_SESSION['nombre'].' - '.$_SESSION['periodo'];
                     ?>
-                </p> 
+                </p>
                 <div id="enviarForm">
                     <input type ="submit" value="Enviar Formulario" name="Submit" id="enviar"/>
                 </div>
             </div>
-            
     	</div>
+
+
 
         <!-- Seleccion de los datos iniciales -->
         <div name="seleccion" id="seleccionInicial">
@@ -96,6 +94,9 @@
                 <p id="txtFomInfo3">Horarios disponible</p>
                 <select name="horario1" id="horario1" class="comboboxFormulario3">;
                     <?php addhorario2(); ?>
+                <select name="horario2" id="horario2" class="comboboxFormulario3">;
+                    <?php addhorario2(); ?>
+
                 
                 
             </div>
